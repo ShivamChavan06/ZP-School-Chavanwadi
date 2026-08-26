@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@800&family=Baloo+2:wght@400&display=swap');
+
+body {
+  margin: 0; padding: 0;
+  font-family: 'Baloo 2', sans-serif;
+  background: linear-gradient(to bottom, #fdffff, #c2e9fb, #f6d365, #fda085);
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px; /* logo आणि heading मध्ये अंतर */
+}
+.school-logo {
+  height: 120px;
+  margin-right: 20px;
+  margin-top: -80px;
+}
+
+
+
+.school-title {
+  font-family: 'Anek Devanagari', sans-serif;
+  font-weight: 800;
+  font-size: 4.8em;
+  margin-top: 5px;
+  background: linear-gradient(90deg, #df2277, #dd3581);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.school-subtitle {
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 300;
+  font-size: 2.4em;
+  margin-top: -85px;
+  color: #2c3e50;
+}
+
+nav {
+  background: #a1c4fd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  margin-top: -40px;
+  justify-content: center;
+}
+
+nav a {
+  color: #2c3e50;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-family: 'Baloo 2', sans-serif;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #fdffff;
+}
+
+.news-ticker {
+  background: linear-gradient(to right, #df2277, #c2185b);
+  color: #fff;
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin top: -20px;
+  overflow: hidden;
+  height: 50px;
+  display: flex;
+  align-items: center;
+ 
+}
+
+.ticker-wrap {
+  width: 100%;
+  overflow: hidden;
+}
+
+.ticker-move {
+  display: flex;
+  animation: ticker 25s linear infinite;
+}
+
+.ticker-item {
+  flex-shrink: 0;
+  padding: 0 50px; /* gap between headlines */
+  white-space: nowrap;
+}
+
+@keyframes ticker {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+
+
+.hero {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* image पूर्ण banner ला fit होईल */
+  z-index: -1;       /* text वर दिसेल */
+}
+
+.hero-content {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%); /* text vertical center मध्ये */
+}
+
+
+/*
+.news {
+  padding: 40px 20px;
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  text-align: center;
+}
+
+.news h2 {
+  font-size: 2.2em;
+  font-family: 'Baloo 2', sans-serif;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.news-item {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.news-item:hover {
+  transform: translateY(-5px);
+}
+
+.news-item h3 {
+  font-size: 1.4em;
+  color: #df2277;
+  margin-bottom: 8px;
+}
+
+.news-item p {
+  font-size: 1em;
+  color: #34495e;
+}
+*/
+
+
+.gallery {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(to bottom, #fdffff, #e0f7fa);
+}
+
+.gallery h2 {
+  font-size: 2.5em;
+  font-family: 'Baloo 2', sans-serif;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.gallery-item p {
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 1.2em;
+  padding: 10px;
+  color: #2c3e50;
+}
+
+.faculty {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(to bottom, #fdffff, #e0f7fa);
+}
+
+.faculty h2 {
+  font-size: 2.5em;
+  font-family: 'Baloo 2', sans-serif;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+.faculty-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.faculty-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.faculty-card:hover {
+  transform: translateY(-5px);
+}
+
+.faculty-card img {
+  width: 100%;
+  height: 325px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.faculty-card h3 {
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 1.4em;
+  margin-top: 15px;
+  color: #df2277;
+}
+
+.faculty-card .education {
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 1em;
+  color: #34495e;
+  margin-top: -25px;
+}
+
+.faculty-card p {
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 1.1em;
+  color: #2c3e50;
+   margin-top: 10px;
+}
+
+.students {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(to bottom, #fdffff, #e0f7fa);
+}
+
+.students h2 {
+  font-size: 2.4em;
+  font-family: 'Baloo 2', sans-serif;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+.students-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.student-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+}
+
+.student-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.student-card h3 {
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 1.4em;
+  margin-top: 15px;
+  color: #df2277;
+}
+
+.student-card p {
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 1.1em;
+  color: #2c3e50;
+}
+
+.student-card .achievement {
+  font-style: italic;
+  color: #34495e;
+  margin-top: 5px;
+}
+
+
+.results {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(to bottom, #fdffff, #e0f7fa);
+}
+
+.results h2 {
+  font-size: 2.5em;
+  font-family: 'Baloo 2', sans-serif;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.results-table {
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 1.1em;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.results-table th {
+  background-color: #34495e;
+  color: #ffffff;
+  padding: 12px;
+}
+
+.results-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.results-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.results-table tr:hover {
+  background-color: #e6f7ff;
+}
+
+.results-table td.pass {
+  font-weight: bold;
+  color: #27ae60; /* हिरवा रंग */
+}
+
+.results-table td.fail {
+  font-weight: bold;
+  color: #e74c3c; /* लाल रंग */
+}
+
+
+.contact {
+  padding: 60px 20px;
+  background: linear-gradient(to bottom, #fdffff, #e0f7fa);
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5em;
+  font-family: 'Baloo 2', sans-serif;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 1.2em;
+  color: #34495e;
+  text-align: left;
+}
+
+.contact-info a {
+  color: #df2277;
+  text-decoration: none;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 1em;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #df2277;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #c2185b;
+}
+
+
+footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-family: 'Baloo 2', sans-serif;
+}
