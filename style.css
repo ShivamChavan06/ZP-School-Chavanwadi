@@ -587,6 +587,16 @@ section.show {
   background-color: #c2185b;
 }
 
+/* mobile styles */
+@media (max-width: 600px) {
+  body {
+    font-size: 0.9em;   /* Mobile वर text छोटा */
+  }
+}
+
+
+
+
 /* Time line */
 .timeline {
   margin: 50px auto;
