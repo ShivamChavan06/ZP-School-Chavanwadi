@@ -27,7 +27,6 @@ header {
 }
 
 
-
 .school-title {
   font-family: 'Anek Devanagari', sans-serif;
   font-weight: 800;
@@ -200,8 +199,6 @@ section.show {
 
 
 
-
-
 .gallery {
   padding: 60px 20px;
   text-align: center;
@@ -253,8 +250,6 @@ section.show {
 .gallery img:hover {
   transform: scale(1.1);
 }
-
-
 
 
 .faculty {
