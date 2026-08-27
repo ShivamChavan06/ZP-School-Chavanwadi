@@ -621,7 +621,6 @@ section.show {
   }
 }
 
-
 @media (max-width: 600px) {
   .principal-box img {
     width: 120px;
@@ -631,7 +630,6 @@ section.show {
     margin-bottom: 10px;
   }
 }
-
 
 @media (max-width: 600px) {
   .principal-box h2 {
