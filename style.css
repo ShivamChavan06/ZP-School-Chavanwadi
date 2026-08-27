@@ -612,6 +612,17 @@ section.show {
   }
 }
 
+@media (max-width: 600px) {
+  .principal-box {
+    flex-direction: column;
+    text-align: center;
+  }
+  .principal-box img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
 
 
 /* Time line */
