@@ -632,11 +632,16 @@ section.show {
 
 
 @media (max-width: 600px) {
-  .principal-box h2 {
-    font-size: 1.5em;
+  .principal-box img {
+    order: 0;    /* Heading नंतर image */
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
     margin-bottom: 10px;
   }
 }
+
 
 @media (max-width: 600px) {
   .principal-box p {
