@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-function exploreMore() {
-  alert("स्वागत आहे! खाली स्क्रोल करून गॅलरी, शिक्षक, विद्यार्थी आणि निकाल पाहा.");
-}
-=======
 function exploreMore() {
   alert("स्वागत आहे! खाली स्क्रोल करून गॅलरी, शिक्षक, विद्यार्थी आणि निकाल पाहा.");
 }
@@ -70,4 +65,4 @@ window.addEventListener("scroll", () => {
 });
 
 
->>>>>>> f8cda45 (First Commit)
+
