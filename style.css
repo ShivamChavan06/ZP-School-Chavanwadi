@@ -704,3 +704,8 @@ footer {
   padding: 15px;
   font-family: 'Baloo 2', sans-serif;
 }
+
+/* TEST GIT */
+body {
+    background-color: red !important;
+}
