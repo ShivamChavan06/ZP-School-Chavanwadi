@@ -1,0 +1,10 @@
+{
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": "\\.(html|css|js)$",
+                "cmd": "git add . && git commit -m \"Auto update\" && git push School_Code main"
+            }
+        ]
+    }
+}
