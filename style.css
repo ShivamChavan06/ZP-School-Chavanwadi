@@ -615,14 +615,37 @@ section.show {
 
 @media (max-width: 600px) {
   .principal-box {
-    flex-direction: column;
+    flex-direction: column;   /* Image वरती, text खाली */
     text-align: center;
+    align-items: center;
   }
+}
+
+@media (max-width: 600px) {
   .principal-box img {
     width: 120px;
     height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
   }
 }
+
+@media (max-width: 600px) {
+  .principal-box h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .principal-box p {
+    font-size: 0.9em;
+    line-height: 1.4;
+    padding: 0 10px;
+  }
+}
+
 
 @media (max-width: 600px) {
   .gallery-container {
