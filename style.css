@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@800&family=Baloo+2:wght@400&display=swap');
 
-
-@media (max-width: 600px) {
-  body {
-    font-size: 0.9em; /* Mobile वर text छोटा */
-  }
-}
-
-
+/* Desktop styles */
 body {
   margin: 0;
   padding: 0;
