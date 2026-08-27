@@ -629,6 +629,13 @@ section.show {
   }
 }
 
+@media (max-width: 600px) {
+  .contact-form {
+    width: 100%;   /* Full width */
+    padding: 10px;
+  }
+}
+
 
 
 /* Time line */
