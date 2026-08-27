@@ -95,7 +95,7 @@ nav a:hover {
   font-weight: bold;
   margin-top: -5px;
   overflow: hidden;
-  height: 50px;
+  height: 40px;
   display: flex;
   align-items: center;
 }
