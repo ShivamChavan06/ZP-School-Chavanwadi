@@ -623,6 +623,12 @@ section.show {
   }
 }
 
+@media (max-width: 600px) {
+  .gallery-container {
+    grid-template-columns: 1fr;   /* Mobile वर एकच column */
+  }
+}
+
 
 
 /* Time line */
