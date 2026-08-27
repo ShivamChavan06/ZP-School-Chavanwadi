@@ -627,7 +627,7 @@ section.show {
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 50px;
+    margin-bottom: -20px;
   }
 }
 
