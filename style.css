@@ -33,8 +33,10 @@ header {
   font-size: 4.8em;
   margin-top: 5px;
   background: linear-gradient(90deg, #df2277, #dd3581);
-  -webkit-background-clip: text;
+  background-clip: text;              /* Standard property */
+  -webkit-background-clip: text;      /* Chrome, Safari */
   -webkit-text-fill-color: transparent;
+  color: transparent;                 /* Fallback for other browsers */
 }
 
 .school-subtitle {
